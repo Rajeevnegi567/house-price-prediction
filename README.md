@@ -1,92 +1,39 @@
-Project Structure
+House Price Prediction – End-to-End Regression Modeling Project :
 
-
-
-
-House-price-predication/
-│
-├── data/
-│   ├── train_data.xlsx
-│   ├── test_data.xlsx
-│
-├── model/
-│   └── champion_model.joblib
-│
-├── notebooks/
-│   └── house-price-prediction.ipynb
-│
-├── scripts/
-│   └── house-price-prediction.py
-│
-├── outputs/
-│   ├── houseprice_predictions_test.xlsx
-│   └── test_metrics.json
-│
+This project builds an end-to-end regression modeling workflow to predict house prices using historical real-estate data from India.
+It demonstrates the complete lifecycle of a data science project—from exploratory analysis to model deployment and evaluation.
 
 Project Overview
 
-This project uses Machine Learning Regression techniques to predict house prices based on features such as:
+Real estate prices depend on multiple factors such as living area, number of bedrooms, bathrooms, condition, location, year built, renovation, and more.
+The goal of this project is to build an accurate and interpretable machine learning model that predicts house prices using these features.
 
-Size (sq ft)
+This workflow follows industry standards with:
 
-Bedrooms
+Baseline models
 
-Bathrooms
+Regression techniques
 
-Location
+Regularization
 
-Age of house
-…and more.
+Cross-validation
 
-Both train and test datasets are included, and the project follows a clear ML pipeline:
-✔ Data Cleaning
-✔ Feature Engineering
-✔ Exploratory Data Analysis
-✔ Model Training
-✔ Model Evaluation
-✔ Saving & Loading Models
-✔ Generating Predictions
+Multicollinearity checks
 
-Features Implemented
-✔ 1. Train/Test Split
+Final “Champion Model” selection
 
-Training data and test data are stored separately in:
+Exporting final artifacts
 
-data/train_data.xlsx
-data/test_data.xlsx
+Final Champion Model
 
-✔ 2. Model Training
+After comparing all models based on CV scores + test metrics:
 
-The model is trained using algorithms such as:
+✔ The best-performing model (“Champion Model”) was saved as:
+Model/champion_model.joblib
 
-Linear Regression
+✔ The test predictions were saved as:
+Output/houseprice_predictions_test.csv
 
-RandomForestRegressor
-
-Gradient Boosting
-
-The best-performing model is saved as:
-
-model/champion_model.joblib
-
-✔ 3. Predictions
-
-Predictions for test data are generated and saved in:
-
-outputs/houseprice_predictions_test.xlsx
-
-✔ 4. Evaluation Metrics
-
-Model performance metrics (MAE, RMSE, R² score) are saved in:
-
-outputs/test_metrics.json
-
-Technologies Used
-Tool/Library	Purpose
-Python	Core programming
-Pandas	Data handling
-NumPy	Numerical operations
-Matplotlib / Seaborn	Visualization
-Scikit-Learn	ML modeling
-Joblib	Saving model
-Jupyter Notebook	Code + explanation
+✔ Test set metrics were stored in:
+Output/test_metrics.json
+ 
