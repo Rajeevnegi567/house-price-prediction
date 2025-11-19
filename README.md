@@ -35,5 +35,6 @@ Model/champion_model.joblib
 Output/houseprice_predictions_test.csv
 
 ✔ Test set metrics were stored in:
-Output/test_metrics.json
+Output/test_metrics.jso
+https://github.com/Rajeevnegi567/house-price-prediction/blob/main/Screenshot%202025-11-19%20081831.png
  
